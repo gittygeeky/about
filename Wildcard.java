@@ -36,7 +36,9 @@ class TUF {
     int n = S1.length();
     int m = S2.length();
 
-    int dp[][] = new int[n][m];
+    int dp[][] = new int[n][m];      //Space Complexity: O(N*M) + O(N+M)
+
+
     for (int row[]: dp)
       Arrays.fill(row, -1);
     return wildcardMatchingUtil(S1, S2, n - 1, m - 1, dp);
