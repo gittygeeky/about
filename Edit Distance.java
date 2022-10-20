@@ -24,7 +24,7 @@ static int editDistanceUtil(String S1, String S2, int i, int j, int[][] dp){
 static int editDistance(String S1, String S2){
     
     int n = S1.length();
-    int m = S2.length();
+    int m = S2.length();  //length of s2
     
     int[][] dp=new int[n][m];     //Space Complexity: O(N*M) + O(N+M)
     for(int row[]: dp)
