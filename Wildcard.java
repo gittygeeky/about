@@ -29,7 +29,7 @@ class TUF {
         return (wildcardMatchingUtil(S1, S2, i - 1, j, dp) == 1 || wildcardMatchingUtil(S1, S2, i, j - 1, dp) == 1) ? 1 : 0;
       else return 0;
     }
-  }
+  } //Time Complexity: O(N*M)
 
   static int wildcardMatching(String S1, String S2) {
 
